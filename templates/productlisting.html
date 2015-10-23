@@ -1,0 +1,13 @@
+
+<section>
+	{% for i in products %}
+	<div class="products">
+	{{i.name}}
+	<img src="{{url_for('static', filename=i.imgpath)}}">
+	{{i.price}}€
+	</div>
+	{% endfor %}
+</section>
+<br>
+<br>
+<a href={{url_for('Main')}}>Zurück</a>

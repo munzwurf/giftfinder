@@ -1,0 +1,19 @@
+.main {
+	width: 100%;
+	position:relative;
+}
+
+.div {
+	position:relative;
+}
+.button {
+	position:absolute;
+	top:88%;
+	left:3%;
+	color:green;
+}
+
+.products {
+	display: inline-block;
+	width: 33%
+}

@@ -1,0 +1,20 @@
+
+
+<form method = "POST" action="{{url_for('ProductListing')}}">	
+		{% for i in questions %}
+		
+		<h2>{{i.sentence}}</h2>
+		
+		{% for j in answers %}
+		{%if j.question_id == i.id %}
+		
+  		<input type="radio" name="{{i.name}}" value="{{j.name}}">
+		<label for="{{j.name}}">{{j.name}}</label><br>
+		<br>
+		{% endif %}
+		{% endfor %}
+		<br>
+		{% endfor %}
+		<a href={{url_for('Main')}}>Zurück</a> 
+			<input type = "submit" value = "Submit!">
+		</form>

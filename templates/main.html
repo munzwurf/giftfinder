@@ -1,0 +1,18 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main.css')}}">
+</head>
+<body>
+	<h1>Finde das passende Geschenk</h1>
+	<br>
+	<div class = "div">
+		<img src="{{url_for('static', filename='background.jpg')}}" class="main">
+		<form action="{{url_for('Questionnaire')}}">
+			<input type = "submit" value = "Jetzt nach Geschenken suchen" class="button" action="{{url_for('ProductListing')}}">
+		</form>
+	</div>
+{% include 'productlisting.html' %}
+</body>
+
+	
+</html>
